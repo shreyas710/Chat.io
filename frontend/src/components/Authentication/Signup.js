@@ -62,7 +62,7 @@ const Signup = () => {
       );
       console.log(data);
       toast({
-        title: "Registration Successful",
+        title: "Registration Successful. Please Login",
         status: "success",
         duration: 5000,
         isClosable: true,
@@ -70,7 +70,7 @@ const Signup = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setPicLoading(false);
-      history.push("/chats");
+      history.push("/");
     } catch (error) {
       toast({
         title: "Error Occured!",

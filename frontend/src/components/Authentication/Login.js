@@ -20,7 +20,6 @@ const Login = () => {
   const { setUser } = ChatState();
 
   const submitHandler = async () => {
-    debugger
     setLoading(true);
     if (!email || !password) {
       toast({

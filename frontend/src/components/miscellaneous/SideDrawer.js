@@ -179,12 +179,12 @@ function SideDrawer() {
                 src={user.pic}
               />
             </MenuButton>
-            <MenuList bg="#222" color="antiquewhite">
+            <MenuList color="#222">
               <ProfileModal user={user}>
-                <MenuItem _hover={{ bg: "antiquewhite", color: "#222" }}>My Profile</MenuItem>{" "}
+                <MenuItem>My Profile</MenuItem>{" "}
               </ProfileModal>
               <MenuDivider />
-              <MenuItem _hover={{ bg: "antiquewhite", color: "#222" }} onClick={logoutHandler}>Logout</MenuItem>
+              <MenuItem onClick={logoutHandler}>Logout</MenuItem>
             </MenuList>
           </Menu>
         </div>

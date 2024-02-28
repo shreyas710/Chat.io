@@ -28,21 +28,20 @@ function Homepage() {
         d="flex"
         justifyContent="center"
         p={3}
-        bg="white"
+        bg="#222"
+        color="antiquewhite"
         w="100%"
         m="40px 0 15px 0"
-        borderRadius="lg"
-        borderWidth="1px"
       >
         <Text fontSize="4xl" fontFamily="Work sans">
           Chat.io
         </Text>
       </Box>
-      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
-        <Tabs isFitted variant="soft-rounded">
+      <Box bg="#222" color="antiquewhite" w="100%" p={4}>
+        <Tabs variant="soft-rounded">
           <TabList mb="1em">
-            <Tab>Login</Tab>
-            <Tab>Sign Up</Tab>
+            <Tab bgColor="transparent" color="antiquewhite">Login</Tab>
+            <Tab bgColor="transparent" color="antiquewhite">Sign Up</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>

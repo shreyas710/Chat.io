@@ -130,7 +130,7 @@ const Signup = () => {
   };
 
   return (
-    <VStack spacing="5px">
+    <VStack spacing="20px">
       <FormControl id="first-name" isRequired>
         <FormLabel>Name</FormLabel>
         <Input
@@ -155,7 +155,7 @@ const Signup = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button color="antiquewhite" colorScheme="#222" h="1.75rem" size="sm" onClick={handleClick}>
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
@@ -170,7 +170,7 @@ const Signup = () => {
             onChange={(e) => setConfirmpassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button color="antiquewhite" colorScheme="#222" h="1.75rem" size="sm" onClick={handleClick}>
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
@@ -188,7 +188,7 @@ const Signup = () => {
       <Button
         colorScheme="blue"
         width="100%"
-        style={{ marginTop: 15 }}
+        style={{ marginTop: 30 }}
         onClick={submitHandler}
         isLoading={picLoading}
       >

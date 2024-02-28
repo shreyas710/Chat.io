@@ -128,15 +128,15 @@ function SideDrawer() {
         d="flex"
         justifyContent="space-between"
         alignItems="center"
-        bg="white"
+        bg="#222"
         w="100%"
         p="5px 10px 5px 10px"
-        borderWidth="5px"
+        color="antiquewhite"
       >
         <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
-          <Button variant="ghost" onClick={onOpen}>
+          <Button bg="antiquewhite" color="#222" variant="ghost" onClick={onOpen}>
             <i className="fas fa-search"></i>
-            <Text d={{ base: "none", md: "flex" }} px={4}>
+            <Text d={{ base: "none", md: "flex" }} px={1}>
               Search User
             </Text>
           </Button>
@@ -153,7 +153,7 @@ function SideDrawer() {
               />
               <BellIcon fontSize="2xl" m={1} />
             </MenuButton>
-            <MenuList pl={2}>
+            <MenuList bgColor="#222" pl={2}>
               {!notification.length && "No New Messages"}
               {notification.map((notif) => (
                 <MenuItem
@@ -171,7 +171,7 @@ function SideDrawer() {
             </MenuList>
           </Menu>
           <Menu>
-            <MenuButton as={Button} bg="white" rightIcon={<ChevronDownIcon />}>
+            <MenuButton as={Button} bg="antiquewhite" color="#222" rightIcon={<ChevronDownIcon />}>
               <Avatar
                 size="sm"
                 cursor="pointer"
@@ -179,12 +179,12 @@ function SideDrawer() {
                 src={user.pic}
               />
             </MenuButton>
-            <MenuList>
+            <MenuList bg="#222" color="antiquewhite">
               <ProfileModal user={user}>
-                <MenuItem>My Profile</MenuItem>{" "}
+                <MenuItem _hover={{ bg: "antiquewhite", color: "#222" }}>My Profile</MenuItem>{" "}
               </ProfileModal>
               <MenuDivider />
-              <MenuItem onClick={logoutHandler}>Logout</MenuItem>
+              <MenuItem _hover={{ bg: "antiquewhite", color: "#222" }} onClick={logoutHandler}>Logout</MenuItem>
             </MenuList>
           </Menu>
         </div>
@@ -192,8 +192,8 @@ function SideDrawer() {
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Search Users</DrawerHeader>
+        <DrawerContent bg="#222" color="antiquewhite">
+          <DrawerHeader>Search Users</DrawerHeader>
           <DrawerBody>
             <Box d="flex" pb={2}>
               <Input
@@ -202,7 +202,7 @@ function SideDrawer() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <Button onClick={handleSearch}>Go</Button>
+              <Button bg="antiquewhite" color="#222" onClick={handleSearch}>Go</Button>
             </Box>
             {loading ? (
               <ChatLoading />

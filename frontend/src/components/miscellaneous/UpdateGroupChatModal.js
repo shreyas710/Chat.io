@@ -205,7 +205,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
 
   return (
     <>
-      <IconButton d={{ base: "flex" }} icon={<ViewIcon />} onClick={onOpen} />
+      <IconButton bg="antiquewhite" color="#222" d={{ base: "flex" }} icon={<ViewIcon />} onClick={onOpen} />
 
       <Modal onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
@@ -216,7 +216,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
             d="flex"
             justifyContent="center"
           >
-            {selectedChat.chatName}
+            {selectedChat.chatName.toUpperCase()}
           </ModalHeader>
 
           <ModalCloseButton />

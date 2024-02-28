@@ -17,12 +17,16 @@ import {
 const ProfileModal = ({ user, children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   return (
     <>
       {children ? (
         <span onClick={onOpen}>{children}</span>
       ) : (
-        <IconButton d={{ base: "flex" }} icon={<ViewIcon />} onClick={onOpen} />
+        <IconButton bg="antiquewhite" color="#222" d={{ base: "flex" }} icon={<ViewIcon />} onClick={onOpen} />
       )}
       <Modal size="lg" onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
@@ -33,7 +37,7 @@ const ProfileModal = ({ user, children }) => {
             d="flex"
             justifyContent="center"
           >
-            {user.name}
+            {capitalizeFirstLetter(user.name)}
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody

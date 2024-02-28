@@ -45,13 +45,18 @@ const MyChats = ({ fetchAgain }) => {
     // eslint-disable-next-line
   }, [fetchAgain]);
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   return (
     <Box
       d={{ base: selectedChat ? "none" : "flex", md: "flex" }}
       flexDir="column"
       alignItems="center"
       p={3}
-      bg="white"
+      bg="#222"
+      color="antiquewhite"
       w={{ base: "100%", md: "31%" }}
       borderRadius="lg"
       borderWidth="1px"
@@ -70,6 +75,8 @@ const MyChats = ({ fetchAgain }) => {
         <GroupChatModal>
           <Button
             d="flex"
+            bg="antiquewhite"
+            color="#222"
             fontSize={{ base: "17px", md: "10px", lg: "17px" }}
             rightIcon={<AddIcon />}
           >
@@ -81,38 +88,37 @@ const MyChats = ({ fetchAgain }) => {
         d="flex"
         flexDir="column"
         p={3}
-        bg="#F8F8F8"
         w="100%"
         h="100%"
+        bg="#222"
         borderRadius="lg"
         overflowY="hidden"
       >
         {chats ? (
-          <Stack overflowY="scroll">
+          <Stack spacing="20px" overflowY="scroll">
             {chats.map((chat) => (
               <Box
                 onClick={() => setSelectedChat(chat)}
                 cursor="pointer"
-                bg={selectedChat === chat ? "#38B2AC" : "#E8E8E8"}
-                color={selectedChat === chat ? "white" : "black"}
-                px={3}
+                bg={selectedChat === chat ? "antiquewhite" : "#222"}
+                color={selectedChat === chat ? "#222" : "antiquewhite"}
+                px={5}
                 py={2}
                 borderRadius="lg"
+                border="1px solid antiquewhite"
                 key={chat._id}
               >
-                <Text>
-                  {!chat.isGroupChat
-                    ? getSender(loggedUser, chat.users)
-                    : chat.chatName}
+                <Text style={{ fontSize: "20px", fontWeight: "200" }}>
+                  {!chat.isGroupChat ? capitalizeFirstLetter(getSender(loggedUser, chat.users)) : chat.chatName.toUpperCase()}
                 </Text>
-                {chat.latestMessage && (
-                  <Text fontSize="xs">
+                {/* {chat.latestMessage && (
+                  <Text fontSize="15px">
                     <b>{chat.latestMessage.sender.name} : </b>
                     {chat.latestMessage.content.length > 50
                       ? chat.latestMessage.content.substring(0, 51) + "..."
                       : chat.latestMessage.content}
                   </Text>
-                )}
+                )} */}
               </Box>
             ))}
           </Stack>
@@ -120,7 +126,7 @@ const MyChats = ({ fetchAgain }) => {
           <ChatLoading />
         )}
       </Box>
-    </Box>
+    </Box >
   );
 };
 

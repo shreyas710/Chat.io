@@ -141,6 +141,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
       );
 
       setSelectedChat(data);
+      setSearchResult([]);
       setFetchAgain(!fetchAgain);
       setLoading(false);
     } catch (error) {
@@ -209,7 +210,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
 
       <Modal onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent bg="#222" color="antiquewhite">
           <ModalHeader
             fontSize="35px"
             fontFamily="Work sans"

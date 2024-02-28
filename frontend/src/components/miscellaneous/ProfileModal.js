@@ -30,7 +30,7 @@ const ProfileModal = ({ user, children }) => {
       )}
       <Modal size="lg" onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
-        <ModalContent h="410px">
+        <ModalContent bg="#222" color="antiquewhite" h="410px">
           <ModalHeader
             fontSize="40px"
             fontFamily="Work sans"
@@ -60,7 +60,7 @@ const ProfileModal = ({ user, children }) => {
             </Text>
           </ModalBody>
           <ModalFooter>
-            <Button onClick={onClose}>Close</Button>
+            <Button bg="antiquewhite" color="#222" onClick={onClose}>Close</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>

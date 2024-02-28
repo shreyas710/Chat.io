@@ -90,7 +90,7 @@ const MyChats = ({ fetchAgain }) => {
         p={3}
         w="100%"
         h="100%"
-        bg="#222"
+        bg="#333"
         borderRadius="lg"
         overflowY="hidden"
       >
@@ -111,14 +111,14 @@ const MyChats = ({ fetchAgain }) => {
                 <Text style={{ fontSize: "20px", fontWeight: "200" }}>
                   {!chat.isGroupChat ? capitalizeFirstLetter(getSender(loggedUser, chat.users)) : chat.chatName.toUpperCase()}
                 </Text>
-                {/* {chat.latestMessage && (
+                {chat.latestMessage && (
                   <Text fontSize="15px">
                     <b>{chat.latestMessage.sender.name} : </b>
                     {chat.latestMessage.content.length > 50
                       ? chat.latestMessage.content.substring(0, 51) + "..."
                       : chat.latestMessage.content}
                   </Text>
-                )} */}
+                )}
               </Box>
             ))}
           </Stack>

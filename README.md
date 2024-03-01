@@ -1,5 +1,6 @@
-A real-time chat application using Socket.io.
-Implemented additional features for group chats, adding, searching, and removing members.
+A real-time chat application using Socket.io.<br/>
+Implemented features for group chats, adding, searching, and removing members.<br/>
+Implemented additional features for displaying notification badges and typing animations.<br/>
 Deployed using Render.com.
 
 Site Link - https://chat-io-c1wc.onrender.com/

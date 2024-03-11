@@ -30,6 +30,31 @@ A real-time chat application using Socket.io.<br/>
     <th>Type</th>
     <th>Description</th>
   </tr>
+  <tr>
+    <td>name</td>
+    <td>String</td>
+    <td>Name of the user</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>String</td>
+    <td>Email id of the user</td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td>String</td>
+    <td>Encrypted user password</td>
+  </tr>
+  <tr>
+    <td>pic</td>
+    <td>String</td>
+    <td>Link to profile image</td>
+  </tr>
+  <tr>
+    <td>isAdmin</td>
+    <td>Boolean</td>
+    <td>if the user is an admin of a group chat</td>
+  </tr>
 </table>
 
 <h3 id="techstack">Tech Stack</h3>

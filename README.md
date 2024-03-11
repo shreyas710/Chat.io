@@ -1,11 +1,16 @@
 <h1>Chat.io</h1>
 
 A real-time chat application using Socket.io.<br/>
-Implemented features for group chats, adding, searching, and removing members.<br/>
-Implemented additional features for displaying notification badges and typing animations.<br/>
-Deployed using Render.com.
 
-Site Link - https://chat-io-c1wc.onrender.com/
+<h3>Features</h3>
+<ul>
+  <li>Signup and Login using JWT Authentication.</li>
+  <li>One-on-one chat and group chats. Edit groups - search, add, remove members.</li>
+  <li>Socket.io implementation for real-time chat updation.</li>
+  <li>Features for displaying notification badges and typing animations.</li>
+</ul>
+
+<strong>Site Link</strong> - https://chat-io-c1wc.onrender.com/
 
 <img width="1512" alt="Screenshot 2024-02-29 at 9 09 30 PM" src="https://github.com/shreyas710/Chat.io/assets/62650542/baeac118-36aa-41ca-8dd6-f25227a684cb">
 

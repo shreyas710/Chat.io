@@ -26,6 +26,15 @@ A real-time chat application using Socket.io.<br/>
 <h4>Models</h4>
 
 <h3 id="techstack">Tech Stack</h3>
+<ul>
+  <li>ReactJS</li>
+  <li>NodeJS</li>
+  <li>Express</li>
+  <li>Socket.io</li>
+  <li>Chakra UI</li>
+  <li>MongoDB</li>
+  <li>Mongoose</li>
+</ul>
 <hr/>
 
 <h3 id="screenshots">Screenshots</h3>

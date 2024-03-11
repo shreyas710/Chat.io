@@ -26,6 +26,7 @@ A real-time chat application using Socket.io.<br/>
 <h4>Models</h4>
 
 <h3 id="techstack">Tech Stack</h3>
+<hr/>
 <ul>
   <li>ReactJS</li>
   <li>NodeJS</li>
@@ -35,7 +36,6 @@ A real-time chat application using Socket.io.<br/>
   <li>MongoDB</li>
   <li>Mongoose</li>
 </ul>
-<hr/>
 
 <h3 id="screenshots">Screenshots</h3>
 <hr/>

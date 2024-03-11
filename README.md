@@ -24,7 +24,13 @@ A real-time chat application using Socket.io.<br/>
 <h3 id="schema">Schema</h3>
 <hr/>
 <h4>User</h4>
-<table rows=6 cols=6></table>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+</table>
 
 <h3 id="techstack">Tech Stack</h3>
 <hr/>

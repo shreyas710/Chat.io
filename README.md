@@ -57,6 +57,72 @@ A real-time chat application using Socket.io.<br/>
   </tr>
 </table>
 
+<br/>
+<h4>Chat</h4>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>chatName</td>
+    <td>String</td>
+    <td>Name of the group chat (name of the user in case of one-on-one chat)</td>
+  </tr>
+  <tr>
+    <td>isGroupChat</td>
+    <td>Boolean</td>
+    <td>true if the chat is a group chat</td>
+  </tr>
+  <tr>
+    <td>users</td>
+    <td>Array</td>
+    <td>array of user ids</td>
+  </tr>
+  <tr>
+    <td>latestMessage</td>
+    <td>ObjectId</td>
+    <td>id of the latest message</td>
+  </tr>
+  <tr>
+    <td>groupAdmin</td>
+    <td>ObjectId</td>
+    <td>id of the group admin</td>
+  </tr>
+</table>
+
+<br/>
+<h4>Message</h4>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>sender</td>
+    <td>ObjectId</td>
+    <td>id of the user who sent the message</td>
+  </tr>
+  <tr>
+    <td>content</td>
+    <td>String</td>
+    <td>the actual message</td>
+  </tr>
+  <tr>
+    <td>chat</td>
+    <td>ObjectId</td>
+    <td>id of the chat to which the message belongs</td>
+  </tr>
+  <tr>
+    <td>readBy</td>
+    <td>Array</td>
+    <td>array of user ids who viewed the message</td>
+  </tr>
+</table>
+
+
 <h3 id="techstack">Tech Stack</h3>
 <hr/>
 <ul>

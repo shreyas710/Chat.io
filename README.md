@@ -1,3 +1,5 @@
+<h1>Chat.io</h1>
+
 A real-time chat application using Socket.io.<br/>
 Implemented features for group chats, adding, searching, and removing members.<br/>
 Implemented additional features for displaying notification badges and typing animations.<br/>

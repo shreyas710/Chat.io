@@ -6,6 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import ChatProvider from "./Context/ChatProvider";
 import { BrowserRouter } from "react-router-dom";
+import {disableReactDevTools} from '@fvilers/disable-react-devtools';
+
+if(process.env.NODE_ENV === 'production') {
+  disableReactDevTools();
+}
 
 ReactDOM.render(
   <ChakraProvider>

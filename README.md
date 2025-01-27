@@ -19,8 +19,6 @@ A real-time chat application using Socket.io.<br/>
   <li>Features for displaying notification badges and typing animations.</li>
 </ul>
 
-<strong>Site Link</strong> - https://chat-io-c1wc.onrender.com/
-
 <h3 id="schema">Schema</h3>
 <hr/>
 <h4>User</h4>
